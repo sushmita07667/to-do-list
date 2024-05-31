@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.complete {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+li span {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+li .task-info {
+    display: flex;
+    flex-direction: column;
+}
+
+li .actions {
+    display: flex;
+}
+
+li .actions button {
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li .actions .complete-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+li .actions .complete-btn:hover {
+    background-color: #0056b3;
+}
+
+li .actions .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+li .actions .delete-btn:hover {
+    background-color: #c82333;
+}
